@@ -19,7 +19,7 @@ int main()
 	}
 	system("ipcs -q");
 	printf("create message queue sucess msgid = %d\n",msgid);
-	msgctl(msgid,IPC_RMID,NULL);
+	//msgctl(msgid,IPC_RMID,NULL);
 	system("ipcs -q");
 
 	return 0;
